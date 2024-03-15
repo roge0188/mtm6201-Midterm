@@ -1,0 +1,284 @@
+/* BODY STYLES */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 17px;
+    font-family: 'open sans', sans-serif;
+}
+/* skip-links */
+.skip-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .skip-links a {
+    position: absolute;
+    top: -3em;
+    background-color: black;
+    color: white;
+    padding: .5em 1em;
+    font-weight: bold;
+  }
+  
+  .skip-links a:focus {
+    top: 0;
+  }
+/*NAVIGATION*/
+.main-nav img {
+    max-width: 10%;
+}
+
+.main-nav {
+    background-color: white;
+    padding-bottom: 0;
+}
+.nav-list li  {
+    list-style: none;
+    padding: 1.5em;
+    
+}
+.nav-list {
+    text-align: right;
+    display: flex;
+}
+.nav-list li a {
+    color: black;
+    text-decoration: none;
+    text-align: right;
+    font-size: 1.5em;
+}
+h1 {
+    font-size: 2.5em;
+}
+h2 {
+    font-size: 1em;
+}
+/* Card styles */
+.explore {
+    background: dark white;
+    background-size: cover;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.abouts {
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.hoodies {
+    background-color: white;
+    padding-bottom: 20px;
+    padding-top: 0;
+    margin-top: 0;
+}
+.hoodie {
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.coats {
+    background-color: white;
+}
+.coat {
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.tees {
+    background-color: white;
+}
+.tee {
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.trends {
+    background-color: white;
+}
+.trend {
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.unders {
+    background-color: white;
+}
+.under {
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.payday {
+    background-color: #FCD800;
+    margin-top: 2em;
+    padding-top: 6em;
+    padding-bottom: 8em;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.promo {
+    background-color: #FCD800;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+/* BUTTON STYLES */
+.us {
+    background-color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 25px;
+    border: 1px solid #222;    
+}
+.us a {
+    color: white;
+    text-decoration: none;
+}
+.sale {
+    background-color: #222;
+    display: inline-block;
+    padding: 2px;
+} 
+.sale a {
+    color: white;
+    text-decoration: none;
+}
+
+/* STYLING IMAGES */
+
+img  {
+    width: 100%;
+}
+.explore img{
+    width: 400px;
+    float: right;
+    margin: 0 auto;
+  }
+  .payday img{
+     width: 400px;
+     float: left;
+     margin: 0 auto;
+  }
+/* STYLING ICONS */
+.icons {
+    color:#EBD96B;
+    font-size: 3em;
+}
+/* FOOTER STYLES */
+
+.site-footer {
+    background-color: #222;
+    margin: 0;
+   padding: 100px;
+   color: white;
+}
+/***********************
+    MEDIA QUERY 760px
+***********************/
+@media screen and (min-width:760px) {
+    /* DESKTOP STYLES */
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+    /* Navigation */
+    .nav-list{
+        display: flex;
+        justify-content: space-around;
+     }
+
+     .main-nav {
+        display: flex;
+     }
+     .explore img{
+       width: 900px;
+       float: right;
+       margin-right: 1em;
+     }
+     .payday img{
+        width: 900px;
+        float: left;
+        margin-right: 1em;
+     }
+     /* Service Cards */
+     .cards {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        row-gap: 1em;
+        column-gap: 1em;
+     }
+
+     .hoodies {
+        grid-column: 1 / span 2 ;
+        grid-row: 1;
+     }
+
+     .coats {
+        grid-column: 3 / span 2 ;
+        grid-row: 1;
+     }
+
+     .tees {
+        grid-column: 5 / span 2;
+        grid-row: 1;
+     }
+     .card {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        row-gap: 1em;
+        column-gap: 1em;
+     }
+     .trends {
+        grid-column: 1 / span 3;
+        grid-row: 2;
+     }
+
+     .unders {
+        grid-column: 4 / span 3;
+        grid-row: 2;
+     }
+     h1 {
+        font-size: 5em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    /* BUTTON STYLES */
+.us {
+    background-color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 50px;
+    border: 1px solid #222;    
+}
+.us a {
+    color: white;
+    text-decoration: none;
+}
+.sale {
+    background-color: #222;
+    display: inline-block;
+    padding: 50px;
+} 
+.sale a {
+    color: white;
+    text-decoration: none;
+}
+
+}
